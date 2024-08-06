@@ -1,0 +1,239 @@
+#body {
+  background-color: rgb(65, 62, 62);
+}
+#first__group {
+  display: flex;
+  color: white;
+  gap: 10rem;
+}
+#first__text {
+  margin-left: 10px;
+  width: 40vw;
+  font-size: 2rem;
+  margin-top: 4rem;
+}
+#first__text h5 {
+  text-align: center;
+}
+#second__group {
+  color: white;
+}
+#second__group p {
+  color: rgb(245, 201, 143);
+}
+#second__group img {
+  width: 10rem;
+  border-radius: 7px;
+}
+#second__group ul {
+  display: flex;
+  gap: 10rem;
+  background-color: rgb(54, 49, 49);
+  width: 70%;
+  border-radius: 5px;
+  margin-left: 3rem;
+}
+#second__group ul li {
+  list-style: none;
+  margin-top: 15px;
+}
+#collaboration {
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+}
+
+#graphic__design {
+  display: flex;
+  font-size: 1rem;
+  gap: 10rem;
+}
+#graphic__text {
+  color: white;
+  font-size: 2rem;
+  width: 30rem;
+  margin-left: 1rem;
+  margin-top: 2rem;
+}
+#graphic__images {
+  display: flex;
+  position: relative;
+  width: 30rem;
+  overflow: hidden;
+}
+#graphic__images img {
+  width: 30rem;
+  border-radius: 10px;
+  animation: image_animation infinite 35s;
+}
+@keyframes image_animation {
+  0% {
+    transform: translateX(0);
+  }
+  10% {
+    transform: translateX(-30rem);
+  }
+  20% {
+    transform: translateX(-60rem);
+  }
+  30% {
+    transform: translateX(-90rem);
+  }
+  40% {
+    transform: translateX(-120rem);
+  }
+  50% {
+    transform: translateX(-150rem);
+  }
+  60% {
+    transform: translateX(-180rem);
+  }
+  70% {
+    transform: translateX(-150rem);
+  }
+  75% {
+    transform: translateX(-120rem);
+  }
+  80% {
+    transform: translateX(-90rem);
+  }
+
+  90% {
+    transform: translateX(-60rem);
+  }
+  95% {
+    transform: translateX(-30rem);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/**MEDIA QUERRIES **/
+/**TABLETS **/
+@media (max-width: 600px) {
+  #first__group {
+    display: block;
+    margin-top: -2rem;
+  }
+  #first__text {
+    margin-left: 10px;
+    width: 95vw;
+    font-size: 1.8rem;
+    margin-top: 0rem;
+    text-align: center;
+  }
+  #mypic img {
+    width: 90%;
+  }
+  #second__group ul {
+    width: 80%;
+    margin-left: 10px;
+    overflow: hidden;
+    gap: 3rem;
+  }
+  #second__group ul li {
+    animation: groupmovement infinite 20s;
+  }
+  @keyframes groupmovement {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-18rem);
+    }
+  }
+  #second__group img {
+    width: 8rem;
+  }
+  #graphic__design {
+    display: block;
+    font-size: 1rem;
+  }
+  #graphic__text {
+    color: white;
+    font-size: 1.6rem;
+    width: 20rem;
+    margin-left: 1rem;
+    text-align: center;
+  }
+  #graphic__images {
+    display: flex;
+    position: relative;
+    width: 23rem;
+    overflow: hidden;
+  }
+  #graphic__images img {
+    width: 22rem;
+    border-radius: 10px;
+    animation: image_animation infinite 35s;
+  }
+  @keyframes image_animation {
+    0% {
+      transform: translateX(0);
+    }
+    10% {
+      transform: translateX(-22rem);
+    }
+    20% {
+      transform: translateX(-44rem);
+    }
+    30% {
+      transform: translateX(-66rem);
+    }
+    40% {
+      transform: translateX(-88rem);
+    }
+    50% {
+      transform: translateX(-110rem);
+    }
+    60% {
+      transform: translateX(-132rem);
+    }
+    70% {
+      transform: translateX(-110rem);
+    }
+    75% {
+      transform: translateX(-88rem);
+    }
+    80% {
+      transform: translateX(-66rem);
+    }
+
+    90% {
+      transform: translateX(-44rem);
+    }
+    95% {
+      transform: translateX(-22rem);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+}
+/**MOBILE PHONES **/
+@media (min-width: 601px) and (max-width: 1024px) {
+  #first__group {
+    display: flex;
+    color: white;
+    gap: 5rem;
+  }
+  #first__text {
+    margin-left: 10px;
+    width: 50vw;
+    font-size: 2rem;
+    margin-top: 4rem;
+  }
+  #second__group img {
+    width: 7rem;
+    border-radius: 7px;
+  }
+  #second__group ul {
+    display: flex;
+    gap: 10rem;
+    background-color: rgb(54, 49, 49);
+    width: 90%;
+    border-radius: 5px;
+    margin-left: 1rem;
+  }
+}
